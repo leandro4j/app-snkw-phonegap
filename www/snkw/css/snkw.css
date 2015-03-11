@@ -1,0 +1,95 @@
+body {
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+
+#loading-bar {
+    -webkit-transition: 350ms linear all;
+    transition: 350ms linear all;
+}
+
+#loading-bar.ng-enter, #loading-bar.ng-leave.ng-leave-active {
+    opacity: 0;
+}
+
+#loading-bar.ng-enter.ng-enter-active, #loading-bar.ng-leave {
+    opacity: 1;
+}
+
+#loading-bar .bar {
+    -webkit-transition: width 350ms;
+    transition: width 350ms;
+    background: #f0b840;
+    position: fixed;
+    z-index: 10002;
+    bottom: 48px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-bottom-right-radius: initial;
+    border-top-right-radius: initial;
+    padding: 0px;
+    border: none;
+}
+
+#loading-bar .bar .peg {
+    position: absolute;
+    width: 40px;
+    right: 0;
+    top: 0;
+    height: 2px;
+    opacity: 1.00;
+    -webkit-border-radius: initial;
+    border-radius: initial;
+    -moz-box-shadow: initial;
+    -ms-box-shadow: initial;
+    -webkit-box-shadow: initial;
+    box-shadow: initial;
+    background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+    font-weight: 200;
+}
+
+.welcome-home{
+    text-align: center;
+}
+
+.welcome-home span{
+    color: #666;
+}
+
+.welcome-home h2{
+    color: #333;
+    margin-top: 5px;
+}
+
+.welcome-img-wrapper{
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.welcome-img{
+    display: inline-block;
+    background-image: url('../img/snkw-account-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 220px 130px;
+    width: 220px;
+    height: 130px;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .welcome-img{
+        background-image: url('../img/snkw-account-logo@2x.png');
+    }
+}

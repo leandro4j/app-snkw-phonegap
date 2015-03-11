@@ -1,0 +1,26 @@
+<ion-view >
+    <ion-content>
+
+        <div class="row row-center" ng-controller="WelcomeHomeCtrl" ng-style="{'height': windowHeight}">
+            <div class="col welcome-home">
+                <div>
+                    <h4 style="color: #666">Bem-vindo ao</h4>
+                    <h2>{{appName}}</h2>
+                </div>
+                <div class="welcome-img-wrapper">
+                    <div class="welcome-img">
+                    </div>
+                </div>
+                <div style="padding: 0px 10px;">
+                    <h4 style="color: #666">Agora vamos configurar seu acesso ao servidor</h4>
+                </div>
+                <div style="margin-top: 40px;">
+                    <button class="button button-outline button-positive" ng-click="startConfig()">
+                        Configurar
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

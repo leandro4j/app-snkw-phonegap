@@ -1,0 +1,15 @@
+<ion-view view-title="App Exemplo">
+    <ion-content class="has-header" delegate-handle="home">
+        <ion-refresher
+		    pulling-text="Puxe para atualizar..."
+		    pulling-icon="ion-chevron-down"
+		    on-refresh="doRefresh()">
+		</ion-refresher>
+        <ion-list>
+	        <ion-item href="#" ng-repeat="screen in recentScreens">
+	            <h2>{{ screen.apelido || screen.descricao }}</h2>
+	            <p>{{ screen.path }}</p>
+	        </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

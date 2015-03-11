@@ -1,0 +1,43 @@
+<ion-view>
+    <ion-content>
+
+        <div class="row row-center" ng-controller="WelcomeNetworkCtrl" ng-style="{'height': windowHeight}">
+            <div class="col welcome-home">
+                <div style="margin-top: 10px;">
+                    <h3>Dados do Servidor</h3>
+                </div>
+                <div style="text-align: center; font-size: 100px;">
+                    <i class="icon ion-earth balanced"></i>
+                </div>
+                <div class="list list-inset" style="text-align: left;">
+                    <div class="item item-input item-select">
+                        <div class="input-label">
+                            Tipo de conexão
+                        </div>
+                        <select ng-model="protocol">
+                            <option value="*" selected>-Escolha-</option>
+                            <option value="https">HTTPS</option>
+                            <option value="http">HTTP</option>
+                        </select>
+                    </div>
+
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Endereço ou IP</span>
+                        <input type="text" placeholder="meuservidor.com ou 10.10.1.1" ng-model="address" />
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Porta</span>
+                        <input type="number" placeholder="8080" ng-model="port" only-digits />
+                    </label>
+                </div>
+
+                <div style="margin: 20px 10px 0px 10px; text-align: center;">
+                    <button class="button button-block button-outline button-positive" ng-click="startLogin()">
+                        {{ connectionLabel }}
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

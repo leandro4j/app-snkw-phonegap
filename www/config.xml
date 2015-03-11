@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "br.com.snkwframework.app.exemplo"
+    version   = "1.0.0">
+
+    <name>App Exemplo</name>
+
+    <description>
+        App de exemplo do SNKW Framework
+    </description>
+
+    <author href="http://foobar.com" email="contato@foobar.com">
+        Hello Work Team
+    </author>
+
+    <gap:platform name="ios" />
+	<gap:platform name="android" />
+    
+    <access origin="*" />
+    
+</widget>
